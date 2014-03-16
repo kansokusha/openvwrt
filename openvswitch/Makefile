@@ -11,18 +11,11 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=openvswitch
 
 PKG_RELEASE:=1
-PKG_VERSION:=1.9.0
+PKG_VERSION:=2.0.1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://openvswitch.org/releases/
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-
-# Only for GIT
-#PKG_VERSION:=1.4.2
-#PKG_REV:=b9a30fe2ebb1d300178d6ba7628b3dc40ff1512b
-#PKG_SOURCE_URL:=git://openvswitch.org/openvswitch
-#PKG_SOURCE_PROTO:=git
-#PKG_SOURCE_VERSION:=$(PKG_REV)
 
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/kernel.mk
