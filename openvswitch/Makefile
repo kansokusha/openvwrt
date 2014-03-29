@@ -151,7 +151,6 @@ define Package/openvswitch-common/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-appctl $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-benchmark $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-ofctl $(1)/usr/bin/
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-parse-leaks $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-pki $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/ovsdb/ovsdb-client $(1)/usr/bin/
 	$(INSTALL_DIR) $(1)/usr/sbin/
@@ -194,6 +193,5 @@ $(eval $(call BuildPackage,openvswitch-ipsec))
 $(eval $(call BuildPackage,openvswitch-common))
 $(eval $(call BuildPackage,openvswitch-controller))
 $(eval $(call BuildPackage,openvswitch-switch))
-$(eval $(call BuildPackage,openvswitch-brcompat))
 $(eval $(call KernelPackage,openvswitch))
 
