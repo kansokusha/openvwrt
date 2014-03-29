@@ -3,7 +3,7 @@ openvswitch
 
 UPDATE: Works now with OpenWrt "Barrier Breaker" (Bleeding Edge)
 
-Open vSwitch 2.0.1 (OvS) package for OpenWrt
+Open vSwitch 2.1.0 (OvS) package for OpenWrt
 
 Installation
 ------------
@@ -22,13 +22,15 @@ Install this as a feed!
 > 
 > make menuconfig
 >
-> select Network -> openvswitch-switch, openvswitch-brcompat and openvswitch-controller
+> select Network -> openvswitch-switch, openvswitch-brcompat, openvswitch-switch, openvswitch-ipsec (Optional)
+> select Advanced configuration options (for developers) -> Toolchain Options -> Binutils Version -> Linaro binutils 2.24
 >
 > echo '# CONFIG_KERNEL_BRIDGE is not set' >> .config
+
 
 
 
 Development
 -----------
 
-Please fork on githup and send pull requests.
+Please fork on github and send pull requests.

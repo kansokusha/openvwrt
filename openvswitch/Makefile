@@ -103,9 +103,8 @@ define KernelPackage/openvswitch
   SUBMENU:=Network Support
   TITLE:=Open Flow Data Path Drivers
   KCONFIG:=CONFIG_BRIDGE
-  DEPENDS:=+kmod-stp +kmod-ipv6
+  DEPENDS:=+kmod-stp +kmod-ipv6 +kmod-gre +kmod-lib-crc32c
   FILES:= \
-	$(PKG_BUILD_DIR)/datapath/linux/brcompat.$(LINUX_KMOD_SUFFIX) \
 	$(PKG_BUILD_DIR)/datapath/linux/openvswitch.$(LINUX_KMOD_SUFFIX)
   AUTOLOAD:=$(call AutoLoad,21,openvswitch brcompat)
 endef
