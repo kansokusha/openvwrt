@@ -140,6 +140,7 @@ define Package/openvswitch-common/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-benchmark $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-ofctl $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-pki $(1)/usr/bin/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/vtep/vtep-ctl $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/ovsdb/ovsdb-client $(1)/usr/bin/
 	$(INSTALL_DIR) $(1)/usr/sbin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/bugtool/ovs-bugtool $(1)/usr/sbin/
