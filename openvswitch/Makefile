@@ -155,7 +155,6 @@ define Package/openvswitch-switch/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-dpctl $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-pcap $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-tcpundump $(1)/usr/bin/
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-vlan-test $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-vsctl $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/ovsdb/ovsdb-tool $(1)/usr/bin/
 
