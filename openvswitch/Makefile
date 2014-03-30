@@ -48,7 +48,6 @@ endef
 
 define Package/openvswitch-common/description
   openvswitch-common provides components required by both openvswitch-switch and
-  openvswitch-controller.
 endef
 
 define Package/openvswitch-ipsec
@@ -60,17 +59,6 @@ endef
 define Package/openvswitch-ipsec/description
   The ovs-monitor-ipsec script provides support for encrypting GRE tunnels with 
   IPsec.
-endef
-
-define Package/openvswitch-controller
-  $(call Package/openvswitch/Default)
-  TITLE:=Open Flow Switch Userspace Package
-  DEPENDS:=+openvswitch-common
-endef
-
-define Package/openvswitch-controller/description
-  The Open vSwitch controller enables OpenFlow switches that connect to it to
-  act as MAC-learning Ethernet switches.
 endef
 
 define Package/openvswitch-switch
@@ -162,11 +150,6 @@ define Package/openvswitch-common/postinst
 [ -n "$${IPKG_INSTROOT}" ] || /etc/init.d/openvswitch enable || true
 endef
 
-define Package/openvswitch-controller/install
-	$(INSTALL_DIR) $(1)/usr/bin/
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-controller $(1)/usr/bin/
-endef
-
 define Package/openvswitch-switch/install
 	$(INSTALL_DIR) $(1)/usr/bin/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/utilities/ovs-dpctl $(1)/usr/bin/
@@ -191,7 +174,6 @@ endef
 
 $(eval $(call BuildPackage,openvswitch-ipsec))
 $(eval $(call BuildPackage,openvswitch-common))
-$(eval $(call BuildPackage,openvswitch-controller))
 $(eval $(call BuildPackage,openvswitch-switch))
 $(eval $(call KernelPackage,openvswitch))
 
