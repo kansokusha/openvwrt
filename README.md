@@ -23,6 +23,7 @@ Install this as a feed!
 > make menuconfig
 >
 > select Network -> openvswitch-switch, openvswitch-brcompat, openvswitch-switch, openvswitch-ipsec (Optional)
+>
 > select Advanced configuration options (for developers) -> Toolchain Options -> Binutils Version -> Linaro binutils 2.24
 >
 > echo '# CONFIG_KERNEL_BRIDGE is not set' >> .config
