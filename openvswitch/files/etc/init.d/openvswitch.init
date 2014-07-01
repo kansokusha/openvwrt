@@ -1,7 +1,7 @@
 #!/bin/sh /etc/rc.common
 # Copyright (C) 2013 Julius Schulz-Zander
 
-START=15
+START=99
 # DEBUG="echo"
 
 start() {
@@ -14,28 +14,25 @@ start() {
 
 	$DEBUG start-stop-daemon -q -S -x  /usr/sbin/ovsdb-server -- \
 		--remote=punix:/var/run/db.sock --remote=db:Open_vSwitch,manager_options \
-		--pidfile=/var/run/ovsdb-server.pid --detach
+		--pidfile=/var/run/ovsdb-server.pid --detach --log-file
 	sleep 3
 
 	$DEBUG ovs-vsctl --no-wait init
 	sleep 3
 
 	$DEBUG start-stop-daemon -q -S -x  /usr/sbin/ovs-vswitchd -- \
-		--pidfile=/var/run/ovs-vswitchd.pid --detach
-	$DEBUG start-stop-daemon -q -S -x  /usr/sbin/ovs-brcompatd -- \
-		--pidfile=/var/run/ovs-brcompatd.pid --detach
+		--pidfile=/var/run/ovs-vswitchd.pid --detach --log-file
 }
 
 stop() {
 	$DEBUG start-stop-daemon -q -K -p /var/run/ovsdb-server.pid
 	$DEBUG start-stop-daemon -q -K -p /var/run/ovs-vswitchd.pid
-	$DEBUG start-stop-daemon -q -S -p /var/run/ovs-brcompatd.pid
 }
 
 restart() {
 	ifdown -a
 	stop
-	sleep 1
+	sleep 3
 	start
 	ifup -a
 }
