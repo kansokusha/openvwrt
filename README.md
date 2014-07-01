@@ -18,9 +18,7 @@ Open vSwitch 2.1.2 (OvS) package for OpenWrt
 5. wget https://gist.githubusercontent.com/pichuang/7372af6d5d3bd1db5a88/raw/4e2290e3e184288de7623c02f63fb57c536e035a/openwrt-add-libatomic.patch -q -O - | patch -p1
 
 6. make menuconfig
-
  * select Network -> openvswitch-switch, openvswitch-switch, openvswitch-ipsec (Optional)
-
  * select Advanced configuration options (for developers) -> Toolchain Options -> Binutils Version -> Linaro binutils 2.24
 
 7. echo '# CONFIG_KERNEL_BRIDGE is not set' >> .config
