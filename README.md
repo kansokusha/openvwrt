@@ -20,12 +20,14 @@ Open vSwitch 2.1.2 (OvS) package for OpenWrt
 6. make menuconfig
  * select Network -> openvswitch-switch, openvswitch-switch, openvswitch-ipsec (Optional)
  * select Advanced configuration options (for developers) -> Toolchain Options -> Binutils Version -> Linaro binutils 2.24
+ * UNSELECT Advanced configuration options (for developers) -> Target Options -> Build packages with MIPS16 instructions
 
-7. echo '# CONFIG_KERNEL_BRIDGE is not set' >> .config
+7. echo '#CONFIG_KERNEL_BRIDGE is not set' >> .config
 
-8. sed -i 's/CONFIG_USE_MIPS16/#CONFIG_USE_MIPS16/g' .config
+8. make V=s
 
-9. make V=s
+**!WARNING!** You need repeat step 7 and 8 after you enter "make menuconfig".
+
 
 ## Enviroment
 * Hardware: D-LINK Dir-835
