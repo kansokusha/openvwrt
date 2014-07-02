@@ -1,11 +1,11 @@
-Openvswitch-Openwrt
+OpenvSwitch-Openwrt
 ===================
 
 UPDATE: Works now with OpenWrt trunk and OpenvSwitch v2.1.2
 
 Open vSwitch 2.1.2 (OvS) package for OpenWrt
 
-### Installation in OpenWrt
+## Installation in OpenWrt
 
 1. cd $TOPDIR
 
@@ -23,7 +23,25 @@ Open vSwitch 2.1.2 (OvS) package for OpenWrt
 
 7. echo '# CONFIG_KERNEL_BRIDGE is not set' >> .config
 
-8. make V=s
+8. sed -i 's/CONFIG_USE_MIPS16/#CONFIG_USE_MIPS16/g' .config
+
+9. make V=s
+
+## Enviroment
+* Hardware: D-LINK Dir-835
+* Build enviroment
+ * gcc version 4.9.0 20140604 (prerelease) (GCC)
+ * ArchLinux x86_64
+
+Q&A
+---
+
+1. How to build OpenWrt?
+ * Please read [Roan's blog Compiled OpenWrt](http://roan.logdown.com/posts/165911-compiled-openwrt) 
+
+2. How to set OpenvSwitch configuration?
+ * Please read [Roan's blog Set OpenvSwitch](http://roan.logdown.com/posts/191801-set-openvswitch)
+
 
 Development
 -----------
