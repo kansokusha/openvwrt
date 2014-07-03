@@ -1,9 +1,7 @@
 OpenvSwitch-Openwrt
 ===================
 
-UPDATE: Works now with OpenWrt trunk and OpenvSwitch v2.1.2
-
-Open vSwitch 2.1.2 (OvS) package for OpenWrt
+Open vSwitch 2.1.2 (OvS) package for OpenWrt "Barrier Breaker" (trunk)
 
 ## Installation in OpenWrt
 
