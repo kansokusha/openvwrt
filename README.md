@@ -42,6 +42,10 @@ Q&A
 2. How to set OpenvSwitch configuration?
  * Please read [Roan's blog Set OpenvSwitch](http://roan.logdown.com/posts/191801-set-openvswitch)
 
+3. No works?
+ * Try reboot and ```telnet 192.168.1.1```
+ * or, ```make clean``` rebuild it.
+
 Screenshot
 ----------
 
