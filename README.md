@@ -1,4 +1,4 @@
-OpenvSwitch-Openwrt
+OpenvWrt
 ===================
 
 Open vSwitch 2.1.2 (OvS) package for OpenWrt "Barrier Breaker" (trunk, r41432)
@@ -7,7 +7,7 @@ Open vSwitch 2.1.2 (OvS) package for OpenWrt "Barrier Breaker" (trunk, r41432)
 
 1. cd $TOPDIR
 
-2. echo 'src-git openvswitch git://github.com/pichuang/openvswitch.git' >> feeds.conf
+2. echo 'src-git openvswitch git://github.com/pichuang/openvwrt.git' >> feeds.conf
 
 3. ./scripts/feeds update openvswitch
 
