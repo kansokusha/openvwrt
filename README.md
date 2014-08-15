@@ -1,7 +1,7 @@
 OpenvSwitch-Openwrt
 ===================
 
-Open vSwitch 2.1.2 (OvS) package for OpenWrt "Barrier Breaker" (trunk, r41432)
+Open vSwitch 2.3.0 (OvS) package for OpenWrt "Barrier Breaker" (trunk, r41432)
 
 ## Installation in OpenWrt
 
