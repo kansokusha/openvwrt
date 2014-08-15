@@ -30,9 +30,9 @@ stop() {
 }
 
 restart() {
-	ifdown -a
 	stop
+	ifdown -a
 	sleep 1
-	start
 	ifup -a
+	start
 }
