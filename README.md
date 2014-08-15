@@ -1,7 +1,7 @@
 OpenvWrt
 ===================
 
-Open vSwitch 2.3.0 (OvS) package for OpenWrt "Barrier Breaker" (trunk, r41432)
+Open vSwitch 2.3.0 (OvS) package for OpenWrt "CHAOS CALMER" (trunk, r42165)
 
 ## Installation in OpenWrt
 
@@ -31,7 +31,7 @@ Open vSwitch 2.3.0 (OvS) package for OpenWrt "Barrier Breaker" (trunk, r41432)
 * Hardware: D-LINK Dir-835
 * Build enviroment
  * gcc version 4.9.0 20140604 (prerelease) (GCC)
- * ArchLinux x86_64
+ * Ubuntu 14.04.1 x86_64
 
 Q&A
 ---
@@ -49,7 +49,7 @@ Q&A
 Screenshot
 ----------
 
-![alt tag](https://lh3.googleusercontent.com/-iG9uWyoYfs8/U7VMH6x69LI/AAAAAAAAE3o/LXO-6HelqrY/w1648-h1142-no/%25E8%259E%25A2%25E5%25B9%2595%25E5%25BF%25AB%25E7%2585%25A7+2014-07-03+20.24.39.png)
+![alt tag](https://lh6.googleusercontent.com/-Ix65c7GZIWc/U-2oTcwL4VI/AAAAAAAAFKs/HVAIJYkWdFY/w622-h425-no/Capture.PNG)
 
 Development
 -----------
