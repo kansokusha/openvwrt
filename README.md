@@ -7,7 +7,7 @@ Open vSwitch 2.3.0 (OvS) package for OpenWrt "CHAOS CALMER" (trunk, r42165)
 
 1. cd $TOPDIR
 
-2. echo 'src-git openvswitch git://github.com/pichuang/openvwrt.git' >> feeds.conf
+2. echo 'src-git openvswitch git://github.com/pichuang/openvwrt.git;ovs-2.3.0' >> feeds.conf
 
 3. ./scripts/feeds update openvswitch
 
