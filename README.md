@@ -3,6 +3,9 @@ OpenvWrt
 
 Open vSwitch 2.3.0 (OvS) package for OpenWrt "CHAOS CALMER" (trunk, r42165)
 
+From NOW, OpenvSwitch had been add to [OpenWrt Packages Repository](https://github.com/openwrt/packages/tree/master/net/openvswitch), so support has ended.
+
+
 ## Installation in OpenWrt
 
 1. cd $TOPDIR
